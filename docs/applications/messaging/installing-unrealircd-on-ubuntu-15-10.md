@@ -1,4 +1,4 @@
----
+﻿---
 author:
     name: William Dover
     email: docs@linode.com
@@ -18,6 +18,6 @@ UnrealIRCd is a popular cross-platform Internet Relay Chat (IRC) Server. Providi
 
 #Prerequisites
 
-* Ensure you have been through the [Getting Started](/docs/getting-started/) guide. 
-* Make sure your server [is secure](/docs/security/securing-your-server.md).
+* Ensure you have been through the [Getting Started](/docs/getting-started) guide. 
+* Make sure your server [is secure](/docs/security/securing-your-server).
 * [GNU Screen](/docs/networking/ssh/using-gnu-screen-to-manage-persistent-terminal-sessions)
