@@ -65,11 +65,49 @@ This tells UnrealIRCd where to look for the executable that it runs. Since this 
 
 This should be set to 0600 - so only the owner can read and write. Further reading on exactly what this means is available in the External Resources section.
 
+    Do you want to support SSL (Secure Sockets Layer) connections?
+    
+This question is asking whether you want SSL to be supported. SSL, while allowing a secure connection, would require you to obtain a certificate. Certificates generally need to be signed by a trusted third-party, and this can be expensive and time consuming, so it is advised that you press Enter to make it use the default of no SSL.
+
+    Do you want to enable IPv6 support? 
+    
+This guide assumes the default no has been used, but some readers may wish to make use of their IPv6 addresses. 
+
+    Do you want to enable ziplinks support?
+    
+`ziplinks` is intended to aid communication between networks running more than one server. Only one is being set up here, so press Enter to accept the default no.
+
+    Do you want to enable remote includes?
+    
+This would allow you to use the same config file across different servers. Again, we are only running one server here and as such this isn't needed. Press Enter to accept the default of no.
 
 
+    Do you want to enable prefixes for chanadmin and chanowner?
+    
+Enabling prefixes will enable the easier identification of administrators in channels, so press Enter to acccept the default of yes.
+
+    What listen() backlog value do you wish to use?  Some older servers
+    have problems with more than 5, others work fine with many more.
+    
+The listen() backlog value gives the number of connections that can be queued at a time. This option is not particularly important, as not many will likely need to be queued but your server should be more than capable of a much higher number than five. Press Enter to set it at five, or optionally increase it if you are expecting to have many people trying to connect at once.
+
+    How far back do you want to keep the nickname history?
+
+The server supports a command called `/whowas` which tells the client what usernames a given user has used in the past. 2000 is the default. This is more than enough as most users will seldom change their username and those who do are unlikely to do it more than 2000 times. 
 
 
+    What is the maximum sendq length you wish to have?
+    
+This is the amount of bytes that the server can have queued to be sent before the connection is closed. The default 3000000 is plenty. Press Enter to accept it.
 
+    How many buffer pools would you like?
+    
+Keeping this setting at the default 18 should keep memory usage down, press Enter to accept this.
+
+
+    How many file descriptors (or sockets) can the IRCd use?
+    
+This determines how many connections can be open at a time. Most servers will never exceed the default of 1024, if you are expecting more than 1024 connections, then increase this option accordingly, otherwise press Enter to accept the default.
 
 
 
