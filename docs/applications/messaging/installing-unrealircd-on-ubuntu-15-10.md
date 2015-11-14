@@ -10,10 +10,9 @@ modified_by:
 published: ''
 title: Installing UnrealIRCd on Ubuntu 15.10
 external_resources:
-- '[Understanding UNIX permissions and chmod](http://www.perlfect.com/articles/chmod.shtml)'
----
+ - '[Understanding UNIX permissions and chmod](http://www.perlfect.com/articles/chmod.shtml)'
 
-UnrealIRCd is a popular cross-platform Internet Relay Chat (IRC) Server. Providing the backbone for many IRC networks worldwide, it is well-regarded for its configurability and security features. 
+---
 
 {: .note}
 >
@@ -28,6 +27,10 @@ UnrealIRCd is a popular cross-platform Internet Relay Chat (IRC) Server. Providi
     sudo iptables -A INPUT -p tcp --dport 6666 -j ACCEPT
 * [GNU Screen](/docs/networking/ssh/using-gnu-screen-to-manage-persistent-terminal-sessions)
 * A working IRC client
+* Ensure you have installed `build-essential`:
+
+    
+    apt-get install build-essential
 
 
 ## Installation
@@ -38,10 +41,11 @@ UnrealIRCd is a popular cross-platform Internet Relay Chat (IRC) Server. Providi
 
 1. Download the source: 
     
-    wget  https://www.unrealircd.org/downloads/Unreal3.2.10.5.tar.gz 
+    `wget  https://www.unrealircd.org/downloads/Unreal3.2.10.5.tar.gz`
+
 2. Extract the source  - you should be able to press the tab key on your keyboard after typing the first few letters of the filename:
 
-    tar zxvf Unreal3.2.10.5.tar.gz
+    `tar zxvf Unreal3.2.10.5.tar.gz
 
 ### Configuration
 
@@ -107,7 +111,14 @@ Keeping this setting at the default 18 should keep memory usage down, press Ente
 
     How many file descriptors (or sockets) can the IRCd use?
     
-This determines how many connections can be open at a time. Most servers will never exceed the default of 1024, if you are expecting more than 1024 connections, then increase this option accordingly, otherwise press Enter to accept the default.
+This determines how many connections can be open at a time. Most servers will never exceed the default of 1024, if you are expecting more than 1024 connections, then increase this option accordingly, otherwise just press Enter to accept the default.
+
+    Would you like to pass any custom parameters to configure?
+    
+This would allow you, if you wanted, to define custom options for the configuration. Press enter to accept the default of none.
+
+UnrealIRCd should now compile. This may take a while. When it is done, move on to the next section.
+
 
 
 
