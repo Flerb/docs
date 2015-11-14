@@ -9,6 +9,7 @@ modified_by:
   name: 
 published: ''
 title: Installing UnrealIRCd on Ubuntu 15.10
+
 ---
 
 {: .note}
@@ -114,8 +115,66 @@ This determines how many connections can be open at a time. Most servers will ne
     
 This would allow you, if you wanted, to define custom options for the configuration. Press enter to accept the default of none.
 
-UnrealIRCd should now compile. This may take a while. When it is done, move on to the next section.
+UnrealIRCd should now set these up. This may take a while. When it is done, move on to the next section.
 
 
+### Compilation
+
+The compilation is straightforward:
+
+    make
+    
+When you get a message indicating compilation is complete, move on to the next section.
+
+## Configuration
+
+UnrealIRCd expects a configuration file called `unrealircd.conf`. There is an example stored in the doc directory under the directory you extracted UnrealIRCd into. Copy it to the main directory:
+
+    cp ~/Unreal3.2.10.5/doc/example.conf ~/Unreal3.2.10.5/unrealircd.conf
+    
+Open it with nano:
+
+    nano unrealircd.conf
+
+Scroll down to:
+
+{: .file-excerpt}
+Unreal3.2.10.5/unrealircd.conf
+~~~ 
+/* FOR *NIX, uncomment the following 2lines: */
+//loadmodule "src/modules/commands.so";
+//loadmodule "src/modules/cloak.so";
+~~~
+Uncomment said lines by removing the two forward slashes at the start of the lines.
+
+Next, scroll down to:
+
+{: .file-excerpt}
+Unreal3.2.10.5/unrealircd.conf
+~~~ 
+me
+{
+        name "irc.foonet.com";
+        info "FooNet Server";
+        numeric 1;
+};
+~~~
+
+Edit this to match your hostname - `name` should be the full domain name of your server, `info` should just be the name of your server. `numeric` should be left at one, since this is a single-server network.
+
+
+Next, scroll down to the admin info settings:
+
+{: .file-excerpt}
+Unreal3.2.10.5/unrealircd.conf
+~~~
+admin {
+        "Bob Smith";
+        "bob";
+        "widely@used.name";
+};
+~~~
+
+You can provide as many lines of contact details for yourself as you wish, but you are advised not to use a personal email address as it might get subjected to spam.
 
 
