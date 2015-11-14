@@ -1,14 +1,15 @@
----
+﻿---
 author:
   name: William Dover
   email: docs@linode.com
-keywords: 'ubuntu, irc, server, messaging'
+description: 'Setting up and installing UnrealIRCd, an IRC server.'
+keywords: 'irc,server,ubuntu'
 license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
-modified: 
 modified_by:
   name: 
-published: ''
-title: Installing UnrealIRCd on Ubuntu 15.10
+published: 'insert published date here'
+title: Setting up UnrealIRCd on Ubuntu 15.10
+
 ---
 
 UnrealIRCd is a popular cross-platform Internet Relay Chat (IRC) Server. Providing the backbone for many IRC networks worldwide, it is well-regarded for its configurability and security features. 
