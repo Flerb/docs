@@ -1,14 +1,21 @@
 ﻿---
 author:
-    name: William Dover
-    email: docs@linode.com
-keywords: 'ubuntu, irc, server, messaging'
+  name: Linode Community
+  email: docs@linode.com
+description: 'Two to three sentences describing your guide.'
+keywords: 'list,of,keywords,and key phrases,'
 license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
-modified: 
+published: 'Weekday, Month 00th, 2015'
+modified: Weekday, Month 00th, 2015
 modified_by:
-    name: 
-published: ''
-title: 'Installing UnrealIRCd on Ubuntu 15.10'
+  name: Linode
+title: 'Guide Title'
+contributor:
+  name: Your Name
+  link: Github/Twitter Link
+  external_resources:
+- '[Link Title 1](http://www.example.com)'
+- '[Link Title 2](http://www.example.net)'
 ---
 
 {: .note}
