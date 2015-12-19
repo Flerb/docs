@@ -1,22 +1,4 @@
-﻿---
-author:
-  name: Linode Community
-  email: docs@linode.com
-description: 'Two to three sentences describing your guide.'
-keywords: 'list,of,keywords,and key phrases,'
-license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
-published: 'Weekday, Month 00th, 2015'
-modified: Weekday, Month 00th, 2015
-modified_by:
-  name: Linode
-title: 'Guide Title'
-contributor:
-  name: Your Name
-  link: Github/Twitter Link
-  external_resources:
-- '[Link Title 1](http://www.example.com)'
-- '[Link Title 2](http://www.example.net)'
----
+﻿
 
 {: .note}
 >
