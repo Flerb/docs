@@ -1,12 +1,12 @@
 ﻿---
 author:
-  name: William Dover
-  email: docs@linode.com
+    name: William Dover
+    email: docs@linode.com
 keywords: 'ubuntu, irc, server, messaging'
 license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
 modified: 
 modified_by:
-  name: 
+    name: 
 published: ''
 title: Installing UnrealIRCd on Ubuntu 15.10
 ---
