@@ -1,15 +1,14 @@
 ﻿---
 author:
-    name: Alex Fornuto
+    name: William Dover
     email: docs@linode.com
-description: 'Using the ZNC bouncer to retain an IRC connection.'
-keywords: 'znc,irc,debian,source,debian 8,debian 7,messaging,chat'
+keywords: 'ubuntu, irc, server, messaging'
 license: '[CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/us/)'
-modified: Thursday, June 4th, 2015
+modified: 
 modified_by:
-    name: 'Elle Krout'
-published: 'Friday, August 21, 2014'
-title: 'Installing ZNC from Source on Debian'
+    name: 
+published: ''
+title: 'Installing UnrealIRCd on Ubuntu 15.10'
 ---
 
 {: .note}
